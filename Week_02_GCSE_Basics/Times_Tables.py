@@ -12,11 +12,15 @@ TODO:
 """
 
 def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
+    def get_multiples(number):
+        for i in range(1,13):
+            answer=number*i
+            print(str(i),"x",str(number),"=",str(answer))
+    number=int(input("Enter a number. "))
+    get_multiples(number)
     pass
 
 
 if __name__ == "__main__":
     main()
+
